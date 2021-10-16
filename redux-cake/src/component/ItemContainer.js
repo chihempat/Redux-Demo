@@ -21,7 +21,7 @@ const mapStateToProps = (state, ownProps) => {
 
 }
 
-const mapDispatchToProps = (state, ownProps) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   const dispatchFunction = ownProps.cake
     ? () => dispatch(buyCake())
     : () => dispatch(buyIceCream())
